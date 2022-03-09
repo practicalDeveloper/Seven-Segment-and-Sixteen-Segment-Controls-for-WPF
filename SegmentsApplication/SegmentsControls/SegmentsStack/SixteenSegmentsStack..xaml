@@ -1,0 +1,43 @@
+﻿<segm:SegmentsStackBase  x:Class="SegmentsControls.SixteenSegmentsStack"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:segm="clr-namespace:SegmentsControls" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" >
+    <Grid>
+
+        <ItemsControl  x:Name="SegmentsArray" >
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <segm:ArrangedPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <segm:ArrangedPanel >
+                        <segm:SixteenSegments Value="{Binding Item}" 
+                                            ShowDot="{Binding ShowDot}" 
+                                            OnDot="{Binding OnDot}"
+                                            ShowColon="{Binding ShowColon}" 
+                                            OnColon="{Binding OnColon}"
+                                            FillBrush="{Binding FillBrush}"
+                                            SelectedFillBrush ="{Binding SelectedFillBrush}"
+                                            PenColor ="{Binding PenColor}"
+                                            SelectedPenColor ="{Binding SelectedPenColor}"
+                                            PenThickness ="{Binding PenThickness}"
+                                            GapWidth ="{Binding GapWidth}"
+                                            RoundedCorners="{Binding RoundedCorners}"
+                                            TiltAngle ="{Binding TiltAngle}"
+                                            VertSegDivider ="{Binding VertSegDivider}"
+                                            HorizSegDivider ="{Binding HorizSegDivider}"
+                                            Margin="5,0,0,0"/>
+                    </segm:ArrangedPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+    </Grid>
+</segm:SegmentsStackBase>

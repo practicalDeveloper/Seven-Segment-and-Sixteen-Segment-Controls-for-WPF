@@ -1,0 +1,33 @@
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.exe.config
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.exe
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.pdb
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsControls.dll
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsControls.pdb
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.csprojResolveAssemblyReference.cache
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\MainWindow.baml
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\MainWindow.g.cs
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\App.g.cs
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication_MarkupCompile.cache
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.g.resources
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.Properties.Resources.resources
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.csproj.GenerateResource.Cache
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.exe
+C:\Users\yjuhno\Desktop\Codepproject_Articles\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.pdb
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.exe.config
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.exe
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.pdb
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.exe
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.pdb
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsControls.dll
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsControls.pdb
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.csprojResolveAssemblyReference.cache
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\MainWindow.baml
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\MainWindow.g.cs
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\App.g.cs
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication_MarkupCompile.cache
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.g.resources
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.Properties.Resources.resources
+C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.csproj.GenerateResource.Cache
+C:\Users\Yuri\Desktop\New folder (2)\SegmentsApplication\SegmentsApplication\bin\Debug\SegmentsApplication.exe.config
+C:\Users\Yuri\Desktop\New folder (2)\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.exe
+C:\Users\Yuri\Desktop\New folder (2)\SegmentsApplication\SegmentsApplication\obj\Debug\SegmentsApplication.pdb
