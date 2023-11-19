@@ -1,0 +1,79 @@
+﻿<Window
+    x:Class="SegmentsApplication.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:SegmentsControls="clr-namespace:SegmentsControls;assembly=SegmentsControls"
+    xmlns:segmentsControls="clr-namespace:SegmentsControls;assembly=SegmentsControlsCore"
+    Title="MainWindow"
+    Width="924.672"
+    Height="519.552">
+    <Grid>
+        <Button
+            Width="96"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="Select segments" />
+        <Button
+            Width="96"
+            Height="22"
+            Margin="10,34,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click_1"
+            Content="Set value" />
+        <Button
+            Width="96"
+            Margin="10,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click_2"
+            Content="Set colors" />
+        <segmentsControls:SixteenSegments
+            x:Name="MySegments"
+            Width="160"
+            Height="170"
+            Margin="619,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            GapWidth="4"
+            RoundedCorners="True"
+            Value="F" />
+        <segmentsControls:SevenSegments
+            x:Name="MySevenSegments"
+            Width="120"
+            Height="157"
+            Margin="427,23,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            OnDot="True"
+            PenColor="Black"
+            PenThickness="1"
+            ShowColon="True"
+            ShowDot="True"
+            VertSegDivider="6"
+            Value="5" />
+        <segmentsControls:SixteenSegmentsStack
+            Height="100"
+            Margin="305,348,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            ElementsCount="8"
+            RoundedCorners="True"
+            ShowColon="True"
+            ShowDot="True"
+            Value="00:12:39" />
+        <segmentsControls:SixteenSegmentsStack
+            Width="705"
+            Height="100"
+            Margin="147,204,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            ElementsCount="8"
+            RoundedCorners="True"
+            SelectedFillBrush="Coral"
+            Value="ABCDEFG" />
+
+    </Grid>
+</Window>

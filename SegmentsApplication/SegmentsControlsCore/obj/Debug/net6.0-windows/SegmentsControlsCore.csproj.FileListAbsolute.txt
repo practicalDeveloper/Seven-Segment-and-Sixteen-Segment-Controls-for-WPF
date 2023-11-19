@@ -1,0 +1,17 @@
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\bin\Debug\net6.0-windows\SegmentsControlsCore.deps.json
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\bin\Debug\net6.0-windows\SegmentsControlsCore.dll
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\bin\Debug\net6.0-windows\SegmentsControlsCore.pdb
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsStack\SevenSegmentsStack.g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsStack\SixteenSegmentsStack..g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore_MarkupCompile.cache
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore_MarkupCompile.lref
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsStack\SevenSegmentsStack.baml
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsStack\SixteenSegmentsStack..baml
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore.g.resources
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore.csproj.CoreCompileInputs.cache
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore.dll
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\refint\SegmentsControlsCore.dll
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\SegmentsControlsCore.pdb
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControlsCore\obj\Debug\net6.0-windows\ref\SegmentsControlsCore.dll

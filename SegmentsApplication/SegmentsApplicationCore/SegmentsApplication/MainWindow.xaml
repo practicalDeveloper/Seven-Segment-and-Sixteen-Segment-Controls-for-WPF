@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:SegmentsControls="clr-namespace:SegmentsControls;assembly=SegmentsControls" x:Class="SegmentsApplication.MainWindow"
+        Title="MainWindow" Height="519.552" Width="924.672" >
+    <Grid>
+        <Button Content="Select segments" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
+        <Button Content="Set value" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1" Height="22"/>
+        <Button Content="Set colors" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_2"/>
+        <SegmentsControls:SixteenSegments 
+            x:Name="MySegments"
+            RoundedCorners="True"
+            Value="A"
+            GapWidth="4"
+            HorizontalAlignment="Left" Height="170" Margin="147,10,0,0" VerticalAlignment="Top" Width="160"/>
+
+        <SegmentsControls:SevenSegments 
+            Value="5"
+            ShowDot ="True"
+            OnDot="True"
+            ShowColon="True"
+            PenThickness="1"
+            VertSegDivider="6"
+            PenColor="Black"
+            HorizontalAlignment="Left" Height="157" Margin="427,23,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <SegmentsControls:SevenSegmentsStack 
+            Value=":12.34"
+            ElementsCount="5"
+            ShowColon="True"
+            ShowDot="True"
+            HorizontalAlignment="Left" Height="100" Margin="147,333,0,0" VerticalAlignment="Top" Width="367"/>
+
+        <SegmentsControls:SixteenSegmentsStack 
+            Value="ABCDEFG"
+            RoundedCorners="True"
+            SelectedFillBrush="Coral"
+            ElementsCount="8"
+            HorizontalAlignment="Left" Height="100" Margin="147,204,0,0" VerticalAlignment="Top" Width="705"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="SegmentsApplication\App.xaml.cs" />
+    <Compile Remove="SegmentsApplication\MainWindow.xaml.cs" />
+    <Compile Remove="SegmentsApplication\Properties\AssemblyInfo.cs" />
+    <Compile Remove="SegmentsApplication\Properties\Resources.Designer.cs" />
+    <Compile Remove="SegmentsApplication\Properties\Settings.Designer.cs" />
+    <Compile Remove="SegmentsControls\ArrangedPanel.cs" />
+    <Compile Remove="SegmentsControls\CharItem.cs" />
+    <Compile Remove="SegmentsControls\Properties\AssemblyInfo.cs" />
+    <Compile Remove="SegmentsControls\SegmentsStack\SegmentsStackBase.cs" />
+    <Compile Remove="SegmentsControls\SegmentsStack\SevenSegmentsStack.xaml.cs" />
+    <Compile Remove="SegmentsControls\SegmentsStack\SixteenSegmentsStack..xaml.cs" />
+    <Compile Remove="SegmentsControls\Segments\GeometryWithSegm.cs" />
+    <Compile Remove="SegmentsControls\Segments\iSegment.cs" />
+    <Compile Remove="SegmentsControls\Segments\SegmentBase.cs" />
+    <Compile Remove="SegmentsControls\Segments\SegmentsEnum.cs" />
+    <Compile Remove="SegmentsControls\Segments\SevenSegments.cs" />
+    <Compile Remove="SegmentsControls\Segments\SixteenSegments.cs" />
+    <EmbeddedResource Remove="SegmentsApplication\Properties\Resources.resx" />
+    <Page Remove="SegmentsApplication\App.xaml" />
+    <Page Remove="SegmentsApplication\MainWindow.xaml" />
+    <Page Remove="SegmentsControls\SegmentsStack\SevenSegmentsStack.xaml" />
+    <Page Remove="SegmentsControls\SegmentsStack\SixteenSegmentsStack..xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SegmentsControlsCore\SegmentsControlsCore.csproj" />
+  </ItemGroup>
+</Project>
