@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YaTslZ9YFCbjQr83LwxFlpEut27zo9VtGcePG/MaRr1/WvRbdBDwCxO2uR0Zuo0SlXh/dPtCBUdWUcFu0eIQYw==",
+  "success": true,
+  "projectFilePath": "C:\\repos\\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\\SegmentsApplication\\SegmentsControlsCore\\SegmentsControlsCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\littl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\littl\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

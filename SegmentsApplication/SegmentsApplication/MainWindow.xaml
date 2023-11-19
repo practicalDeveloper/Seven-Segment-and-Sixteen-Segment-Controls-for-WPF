@@ -53,7 +53,7 @@
             ShowDot="True"
             VertSegDivider="6"
             Value="5" />
-        <SegmentsControls:SevenSegmentsStack
+        <SegmentsControls:SixteenSegmentsStack
             Height="100"
             Margin="305,348,0,0"
             HorizontalAlignment="Stretch"
@@ -62,7 +62,7 @@
             RoundedCorners="True"
             ShowColon="True"
             ShowDot="True"
-            Value=":12:39" />
+            Value="00:12:39" />
         <SegmentsControls:SixteenSegmentsStack
             Width="705"
             Height="100"
