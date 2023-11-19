@@ -24,3 +24,17 @@ C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsControls\obj\Debug\Segment
 C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.g.resources
 C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.dll
 C:\Users\Yuri\Desktop\WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.pdb
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\bin\Debug\SegmentsControls.dll
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\bin\Debug\SegmentsControls.pdb
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.csproj.AssemblyReference.cache
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SevenSegmentsStack.g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SixteenSegmentsStack..g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls_MarkupCompile.cache
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls_MarkupCompile.lref
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SevenSegmentsStack.baml
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SixteenSegmentsStack..baml
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.g.resources
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.csproj.CoreCompileInputs.cache
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.dll
+C:\repos\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.pdb
