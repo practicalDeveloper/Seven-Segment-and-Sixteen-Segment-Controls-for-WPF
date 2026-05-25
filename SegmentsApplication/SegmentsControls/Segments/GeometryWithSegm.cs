@@ -10,16 +10,21 @@ namespace SegmentsControls
     /// <summary>
     /// The class to detect selected segment
     /// </summary>
-    public class GeometryWithSegm
+    public class GeometryWithSegm<TSegment>
     {
         public PathGeometry Geometry { get; set; }
-        public int SegmentNumber { get; set; }
+
+        public TSegment SegmentNumber { get; set; }
+
         public bool IsSelected { get; set; }
 
-        public GeometryWithSegm(PathGeometry geometry, int segm, bool isSelected = false)
+        public GeometryWithSegm(
+            PathGeometry geometry,
+            TSegment segment,
+            bool isSelected = false)
         {
             Geometry = geometry;
-            SegmentNumber = segm;
+            SegmentNumber = segment;
             IsSelected = isSelected;
         }
     }

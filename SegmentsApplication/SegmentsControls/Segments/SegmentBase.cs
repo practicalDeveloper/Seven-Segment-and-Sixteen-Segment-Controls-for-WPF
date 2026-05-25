@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,8 +15,10 @@ namespace SegmentsControls
     /// A base classs for segment controls
     /// </summary>
     [DesignTimeVisible(false)]
-    public class SegmentBase : UserControl, iSegment
+    public abstract class SegmentBase : UserControl, iSegment
     {
+        protected bool _segmentsDirty = true;
+
         protected event PropertyChangedCallback PropertyChanged = (sender, e) => { };
         protected static double defVertDividerSixteen = 7.5;
         protected static double defHorizDividerSixteen = 11.5;
@@ -39,7 +42,7 @@ namespace SegmentsControls
         public static DependencyProperty HorizSegDividerProperty;
 
 
-        
+
         static SegmentBase()
         {
             PenThicknessProperty = DependencyProperty.Register("PenThickness", typeof(Double),
@@ -84,11 +87,11 @@ namespace SegmentsControls
             OnColonProperty = DependencyProperty.Register("OnColon", typeof(bool),
                 typeof(SegmentBase), new PropertyMetadata(false, VisualChanged));
 
-            SelectedSegmentsProperty = DependencyProperty.Register("SelectedSegments", typeof(List<int>),
-                typeof(SegmentBase), new PropertyMetadata(new List<int>(), VisualChanged));
+            SelectedSegmentsProperty =  DependencyProperty.Register( "SelectedSegments", typeof(IList),
+                        typeof(SegmentBase), new PropertyMetadata( null, VisualChanged));
 
-            SegmentsBrushProperty = DependencyProperty.Register("SegmentsBrush", typeof(List<Tuple<int, Brush, Color>>),
-                typeof(SegmentBase), new PropertyMetadata(new List<Tuple<int, Brush, Color>>(), VisualChanged));
+            SegmentsBrushProperty = DependencyProperty.Register("SegmentsBrush", typeof(IList),
+                        typeof(SegmentBase), new PropertyMetadata( null, VisualChanged));
 
             VertSegDividerProperty = DependencyProperty.Register("VertSegDivider", typeof(double),
                 typeof(SegmentBase), new PropertyMetadata(5.0, VisualChanged));
@@ -100,20 +103,19 @@ namespace SegmentsControls
         /// <summary>
         /// A list of selected segments set by user
         /// </summary>
-        public List<int> SelectedSegments
+        public IList SelectedSegments
         {
-            get { return (List<int>)this.GetValue(SelectedSegmentsProperty); }
-            set { this.SetValue(SelectedSegmentsProperty, value); }
+            get { return (IList)GetValue(SelectedSegmentsProperty); }
+            set { SetValue( SelectedSegmentsProperty, value); }
         }
 
-        /// <summary>
-        /// A list of segments numbers, fill brushes and pen colors
-        /// </summary>
-        public List<Tuple<int, Brush, Color>> SegmentsBrush
+
+        public IList SegmentsBrush
         {
-            get { return (List<Tuple<int, Brush, Color>>)this.GetValue(SegmentsBrushProperty); }
-            set { this.SetValue(SegmentsBrushProperty, value); }
-        } 
+            get { return (IList)GetValue(SegmentsBrushProperty); }
+            set { SetValue(SegmentsBrushProperty,value); }
+        }
+
 
         /// <summary>
         /// A brush for not selected elements
@@ -258,9 +260,14 @@ namespace SegmentsControls
         private static void VisualChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
             SegmentBase segments = (SegmentBase)sender;
+            segments._segmentsDirty = true;
             segments.PropertyChanged(sender, e);
         }
 
 
     }
+
+
+
+
 }

@@ -1,39 +1,48 @@
-﻿namespace SegmentsControls
+﻿using System;
+
+namespace SegmentsControls
 {
     /// <summary>
-    /// Segments numbers for seven segment control
+    /// Segments flags for seven segment control
     /// </summary>
-    public enum SevenSegmentsNumbers
+    [Flags]
+    public enum SevenSegmentsFlags
     {
-        Top= 0,
-        RightTop = 1,
-        RightBottom = 2,
-        Bottom = 3,
-        LeftBottom = 4,
-        LeftTop = 5,
-        Middle = 6
+        None = 0,
+
+        Top = 1 << 0,
+        RightTop = 1 << 1,
+        RightBottom = 1 << 2,
+        Bottom = 1 << 3,
+        LeftBottom = 1 << 4,
+        LeftTop = 1 << 5,
+        Middle = 1 << 6
     }
 
+
     /// <summary>
-    /// Segments numbers for sixteen segment control
+    /// Segments flags for sixteen segment control
     /// </summary>
-    public enum SixteenSegmentsNumbers
+    [Flags]
+    public enum SixteenSegmentsFlags
     {
-        LeftHorizTop = 0,
-        RightHorizTop = 1,
-        RightVertTop = 2,
-        RightVertBottom = 3,
-        RightHorizBottom = 4,
-        LeftHorizBottom = 5,
-        LeftVertBottom = 6,
-        LeftVertTop = 7,
-        LeftTopDiagonal = 8,
-        TopVertical = 9,
-        RightTopDiagonal = 10,
-        LeftMiddle = 11,
-        RightMiddle = 12,
-        LeftBottomDiagonal = 13,
-        BottomVertical = 14,
-        RightBottomDiagonal = 15
+        None = 0,
+
+        LeftHorizTop = 1 << 0,
+        RightHorizTop = 1 << 1,
+        RightVertTop = 1 << 2,
+        RightVertBottom = 1 << 3,
+        RightHorizBottom = 1 << 4,
+        LeftHorizBottom = 1 << 5,
+        LeftVertBottom = 1 << 6,
+        LeftVertTop = 1 << 7,
+        LeftTopDiagonal = 1 << 8,
+        TopVertical = 1 << 9,
+        RightTopDiagonal = 1 << 10,
+        LeftMiddle = 1 << 11,
+        RightMiddle = 1 << 12,
+        LeftBottomDiagonal = 1 << 13,
+        BottomVertical = 1 << 14,
+        RightBottomDiagonal = 1 << 15
     }
 }

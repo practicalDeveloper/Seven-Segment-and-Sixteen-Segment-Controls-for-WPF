@@ -12,7 +12,7 @@ namespace SegmentsControls
     /// <summary>
     /// A panel children of which fill maximum space
     /// </summary>
-    [DesignTimeVisible(false)] 
+    [DesignTimeVisible(false)]
     internal class ArrangedPanel : Panel
     {
         protected override Size ArrangeOverride(Size finalSize)

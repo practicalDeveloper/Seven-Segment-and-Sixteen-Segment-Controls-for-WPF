@@ -17,6 +17,7 @@ namespace SegmentsControls
     {
         public static DependencyProperty ElementsCountProperty;
 
+
         /// <summary>
         /// Number of segment elements to show
         /// </summary>
@@ -50,21 +51,26 @@ namespace SegmentsControls
 
         public ObservableCollection<CharItem> GetCharsArray()
         {
-            // converts value to char array
-            char[] charArray = Value.ToCharArray();
-            // the dots count
-            var dotCount = charArray.Where(c => c == '.').Count();
-            // the colons count
-            var colonCount = charArray.Where(c => c == ':').Count();
+            char[] charArray = null;
+            int dotCount = 0;
+            int colonCount = 0;
+            int charCount = 0;
 
-            // the chars count without dots and colons
-            var charCount = charArray.Count() - dotCount;
+            if (Value != null)
+            {
+                // converts value to char array
+                charArray =  Value.ToCharArray();
+                // the dots count
+                dotCount = charArray.Where(c => c == '.').Count();
+                // the colons count
+                colonCount = charArray.Where(c => c == ':').Count();
+                // the chars count without dots and colons
+                charCount = charArray.Count() - dotCount;
+            }
             
             var valueChars = new ObservableCollection<CharItem>();
             int index = 0;
 
-            if (charArray.Count() > 0)
-            {
                 for (int i = 0; i < ElementsCount; i++)
                 {
                     // sets properties for the each seven segment item
@@ -85,8 +91,8 @@ namespace SegmentsControls
                     valueChars.Add(item);
 
                     if (i >= ElementsCount - charCount)
-                    {
-                        if (index <= charArray.Count() - 1)
+                {
+                    if (index <= charArray.Count() - 1)
                         {
                             // sets char for the element
                             if (charArray[index] != '.' && charArray[index] != ':')
@@ -114,7 +120,9 @@ namespace SegmentsControls
                 }
 
 
-                // sets dot for the last element if required
+            // sets dot for the last element if required
+            if (Value != null && charArray.Count() > 0)
+            {
                 if (ElementsCount >= charCount)
                 {
                     if (charArray[charArray.Count() - 1] == '.')
@@ -132,8 +140,8 @@ namespace SegmentsControls
                     }
                 }
 
-            }
 
+            }
             return valueChars;
         }
 

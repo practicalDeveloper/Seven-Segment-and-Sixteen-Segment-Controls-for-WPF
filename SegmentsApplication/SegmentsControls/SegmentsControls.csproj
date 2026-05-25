@@ -51,16 +51,23 @@
     <Compile Include="SegmentsStack\SixteenSegmentsStack..xaml.cs">
       <DependentUpon>SixteenSegmentsStack..xaml</DependentUpon>
     </Compile>
+    <Compile Include="Segments\Glyphs\SixteenSegmentCyrillicGlyphs.cs" />
+    <Compile Include="Segments\Glyphs\SixteenSegmentLatinGlyphs.cs" />
+    <Compile Include="Segments\Glyphs\SixteenSegmentNumericGlyphs.cs" />
+    <Compile Include="Segments\SegmentBaseT.cs" />
+    <Compile Include="Segments\SegmentBrush.cs" />
+    <Compile Include="Segments\Glyphs\SixteenSegmentGlyphs.cs" />
+    <Compile Include="Segments\Glyphs\SevenSegmentGlyphs.cs" />
     <Compile Include="Segments\SixteenSegments.cs" />
     <Compile Include="Segments\GeometryWithSegm.cs" />
     <Compile Include="Segments\iSegment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Segments\SegmentBase.cs" />
     <Compile Include="Segments\SegmentsEnum.cs" />
-    <Compile Include="Segments\SevenSegments.cs" />
     <Compile Include="SegmentsStack\SevenSegmentsStack.xaml.cs">
       <DependentUpon>SevenSegmentsStack.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Segments\SevenSegments.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="SegmentsStack\SevenSegmentsStack.xaml">

@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 
+
 namespace SegmentsControls
 {
-    public class SixteenSegments : SevenSegments
+    public class SixteenSegments : SegmentBase<SixteenSegmentsFlags>
     {
         /// <summary>
         /// The width of diagonal segment
         /// </summary>
-        protected double DiagSegW;
+        private double DiagSegW;
 
-        #region Protected variables
+        #region Private variables
 
         /// <summary>
         /// Points collection for the left top horiz. segment
@@ -93,87 +94,52 @@ namespace SegmentsControls
                 new FrameworkPropertyMetadata(defHorizDividerSixteen));
         }
 
-        protected override void OnRender(DrawingContext drawingContext)
-        {
-            
-            base.OnRender(drawingContext);
-            
-        }
-
-        /// <summary>
-        /// Selects segments depending on the value 
-        /// </summary>
         protected override void ValueSegmentsSelection()
         {
-            char tempValue = Value.ToCharArray().Count() > 0 ? Value[0] : ' ';
+            ResetSegments();
 
-            if (tempValue == '0') SelectSegments(0, 1, 2, 3, 4, 5, 6, 7);
-            else if (tempValue == '1') SelectSegments(10, 2, 3);
-            else if (tempValue == '2') SelectSegments(0, 1, 2, 11, 12, 6 , 5, 4);
-            else if (tempValue == '3') SelectSegments(0, 1, 2, 3, 4, 5, 11, 12);
-            else if (tempValue == '4') SelectSegments(7, 11, 12, 2, 3);
-            else if (tempValue == '5') SelectSegments(0, 1 , 12 , 11, 7 , 4, 5, 3);
-            else if (tempValue == '6') SelectSegments(15, 16, 5, 6, 7, 8, 4, 17, 18, 2);
-            else if (tempValue == '7') SelectSegments(0, 1, 2, 3);
-            else if (tempValue == '8') SelectSegments(0, 1, 2, 3, 4, 5, 6, 7, 11, 12);
-            else if (tempValue == '9') SelectSegments(0, 1, 2, 3, 4, 5, 7, 11, 12);
-            else if (tempValue == 'A') SelectSegments(0, 1, 2, 3, 6, 7, 11, 12);
-            else if (tempValue == 'B') SelectSegments(0, 1, 2, 3, 4, 5, 9, 14, 12);
-            else if (tempValue == 'C') SelectSegments(0, 1, 4, 5, 6, 7);
-            else if (tempValue == 'D') SelectSegments(0, 1, 2, 3, 4, 5, 9, 14);
-            else if (tempValue == 'E') SelectSegments(0, 1, 4, 5, 6, 7 , 11, 12);
-            else if (tempValue == 'F') SelectSegments(0 ,1 ,6, 7, 11, 12);
-            else if (tempValue == 'G') SelectSegments(0, 1, 3, 4, 5, 6, 7, 12);
-            else if (tempValue == 'H') SelectSegments(2 ,3, 6, 7 ,11, 12);
-            else if (tempValue == 'I') SelectSegments(0, 1, 4, 5, 9 ,14);
-            else if (tempValue == 'J') SelectSegments(2 ,3 ,4 ,5 ,6);
-            else if (tempValue == 'K') SelectSegments(6, 7, 11, 10, 15);
-            else if (tempValue == 'L') SelectSegments(4, 5, 6, 7);
-            else if (tempValue == 'M') SelectSegments(2, 3, 6, 7, 8 , 10);
-            else if (tempValue == 'N') SelectSegments(2, 3, 6, 7, 8, 15);
-            else if (tempValue == 'O') SelectSegments(0, 1, 2, 3, 4, 5, 6, 7);
-            else if (tempValue == 'P') SelectSegments(6, 7, 0 ,1, 2, 11, 12);
-            else if (tempValue == 'Q') SelectSegments(0, 1, 2, 3, 4, 5, 6, 7, 15);
-            else if (tempValue == 'R') SelectSegments(6, 7 , 0, 1, 2, 11, 12, 15 );
-            else if (tempValue == 'S') SelectSegments(0, 1, 12, 11, 7, 4, 5, 3);
-            else if (tempValue == 'T') SelectSegments(0, 1, 9, 14);
-            else if (tempValue == 'U') SelectSegments(2, 3, 4, 5, 6, 7);
-            else if (tempValue == 'V') SelectSegments(6, 7, 13, 10);
-            else if (tempValue == 'W') SelectSegments(6 , 7,  2, 3, 13, 15);
-            else if (tempValue == 'X') SelectSegments(8, 15, 13, 10);
-            else if (tempValue == 'Y') SelectSegments(7, 11, 12, 14, 2);
-            else if (tempValue == 'Z') SelectSegments(0 , 1, 10, 13, 4, 5);
-            else if (tempValue == '-') SelectSegments(11, 12);
+            char c = string.IsNullOrWhiteSpace(Value)
+                ? ' '
+                : char.ToUpperInvariant(Value[0]);
+
+
+            if (!SixteenSegmentGlyphs.Map.TryGetValue(c, out SixteenSegmentsFlags mask))
+            {
+                mask = SixteenSegmentsFlags.None;
+            }
+
+            ApplyMask(Convert.ToUInt32(mask));
         }
+
 
         protected override void AssignSegments()
         {
-            GeometryFigures = new List<GeometryWithSegm>();
+            GeometryFigures = new List<GeometryWithSegm<SixteenSegmentsFlags>>();
+
             DiagSegW = VertSegBotPartW;
 
             // Assigns a segment number to required path geometry. Order is important!
-            GeometryFigures.Add(new GeometryWithSegm(LeftBottomSegement(), (int)SixteenSegmentsNumbers.LeftVertBottom));
-            GeometryFigures.Add(new GeometryWithSegm(LeftTopSegement(), (int)SixteenSegmentsNumbers.LeftVertTop));
-            GeometryFigures.Add(new GeometryWithSegm(RightTopSegement(), (int)SixteenSegmentsNumbers.RightVertTop));
-            GeometryFigures.Add(new GeometryWithSegm(RightBottomSegement(), (int)SixteenSegmentsNumbers.RightVertBottom));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(LeftBottomSegment(), SixteenSegmentsFlags.LeftVertBottom));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(LeftTopSegment(), SixteenSegmentsFlags.LeftVertTop));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(RightTopSegment(), SixteenSegmentsFlags.RightVertTop));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(RightBottomSegment(), SixteenSegmentsFlags.RightVertBottom));
 
             TopSegmPoints = GetTopSegmPoints();
             BottomSegmPoints = GetBottomSegmPoints();
-            GeometryFigures.Add(new GeometryWithSegm(LeftTopHorizSegement(), (int)SixteenSegmentsNumbers.LeftHorizTop));
-            GeometryFigures.Add(new GeometryWithSegm(RightTopHorizSegement(), (int)SixteenSegmentsNumbers.RightHorizTop));
-            GeometryFigures.Add(new GeometryWithSegm(LeftBottomHorizSegement(), (int)SixteenSegmentsNumbers.LeftHorizBottom));
-            GeometryFigures.Add(new GeometryWithSegm(RightBottomHorizSegement(), (int)SixteenSegmentsNumbers.RightHorizBottom));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(LeftTopHorizSegement(), SixteenSegmentsFlags.LeftHorizTop));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(RightTopHorizSegement(), SixteenSegmentsFlags.RightHorizTop));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(LeftBottomHorizSegement(), SixteenSegmentsFlags.LeftHorizBottom));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(RightBottomHorizSegement(), SixteenSegmentsFlags.RightHorizBottom));
 
             MiddleSegmPoints = GetMiddleSegmPoints();
-            GeometryFigures.Add(new GeometryWithSegm(LeftMiddleSegement(), (int)SixteenSegmentsNumbers.LeftMiddle));
-            GeometryFigures.Add(new GeometryWithSegm(RightMiddleSegement(), (int)SixteenSegmentsNumbers.RightMiddle));
-            GeometryFigures.Add(new GeometryWithSegm(TopVerticalSegment(), (int)SixteenSegmentsNumbers.TopVertical));
-            GeometryFigures.Add(new GeometryWithSegm(BottomVerticalSegment(), (int)SixteenSegmentsNumbers.BottomVertical));
-            GeometryFigures.Add(new GeometryWithSegm(BottomLeftDiagSegment(), (int)SixteenSegmentsNumbers.LeftBottomDiagonal));
-            GeometryFigures.Add(new GeometryWithSegm(TopLeftDiagSegment(), (int)SixteenSegmentsNumbers.LeftTopDiagonal));
-            GeometryFigures.Add(new GeometryWithSegm(TopRightDiagSegment(), (int)SixteenSegmentsNumbers.RightTopDiagonal));
-            GeometryFigures.Add(new GeometryWithSegm(BottomRightDiagSegment(), (int)SixteenSegmentsNumbers.RightBottomDiagonal));
-
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(LeftMiddleSegement(), SixteenSegmentsFlags.LeftMiddle));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(RightMiddleSegement(), SixteenSegmentsFlags.RightMiddle));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(TopVerticalSegment(), SixteenSegmentsFlags.TopVertical));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(BottomVerticalSegment(), SixteenSegmentsFlags.BottomVertical));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(BottomLeftDiagSegment(), SixteenSegmentsFlags.LeftBottomDiagonal));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(TopLeftDiagSegment(), SixteenSegmentsFlags.LeftTopDiagonal));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(TopRightDiagSegment(), SixteenSegmentsFlags.RightTopDiagonal));
+            GeometryFigures.Add(new GeometryWithSegm<SixteenSegmentsFlags>(BottomRightDiagSegment(), SixteenSegmentsFlags.RightBottomDiagonal));
         }
 
 
