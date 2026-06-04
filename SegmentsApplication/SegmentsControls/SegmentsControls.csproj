@@ -54,6 +54,7 @@
     <Compile Include="Segments\Glyphs\SixteenSegmentCyrillicGlyphs.cs" />
     <Compile Include="Segments\Glyphs\SixteenSegmentLatinGlyphs.cs" />
     <Compile Include="Segments\Glyphs\SixteenSegmentNumericGlyphs.cs" />
+    <Compile Include="Segments\Glyphs\SixteenSegmentSymbolsGlyphs.cs" />
     <Compile Include="Segments\SegmentBaseT.cs" />
     <Compile Include="Segments\SegmentBrush.cs" />
     <Compile Include="Segments\Glyphs\SixteenSegmentGlyphs.cs" />

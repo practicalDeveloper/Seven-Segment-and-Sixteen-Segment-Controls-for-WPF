@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace SegmentsControls
 {
@@ -17,6 +13,7 @@ namespace SegmentsControls
             Merge(SixteenSegmentNumericGlyphs.NumericMap);
             Merge(SixteenSegmentLatinGlyphs.LatinMap);
             Merge(SixteenSegmentCyrillicGlyphs.CyrillicMap);
+            Merge(SixteenSegmentSymbolsGlyphs.SymbolsMap);
         }
 
         private static void Merge(Dictionary<char, SixteenSegmentsFlags> source)

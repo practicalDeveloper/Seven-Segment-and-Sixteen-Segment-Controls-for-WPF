@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\YJuhno\SegmentsApplication2\SegmentsApplication12\SegmentsControls\obj\Debug\
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\
 SegmentsControls
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 2-1624698707
 
-201679821226
+21-1901461928
 14-1469364563
 SegmentsStack\SevenSegmentsStack.xaml;SegmentsStack\SixteenSegmentsStack..xaml;
 
-False
+True
 

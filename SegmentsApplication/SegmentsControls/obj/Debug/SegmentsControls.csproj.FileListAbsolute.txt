@@ -193,3 +193,17 @@ D:\YJuhno\Codepproject_Articles\SegmentsArticle\Old\Seven-Segment-and-Sixteen-Se
 D:\YJuhno\Codepproject_Articles\SegmentsArticle\Old\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.csproj.CoreCompileInputs.cache
 D:\YJuhno\Codepproject_Articles\SegmentsArticle\Old\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.dll
 D:\YJuhno\Codepproject_Articles\SegmentsArticle\Old\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.pdb
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\bin\Debug\SegmentsControls.dll
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\bin\Debug\SegmentsControls.pdb
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.csproj.AssemblyReference.cache
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SevenSegmentsStack.g.cs
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SixteenSegmentsStack..g.cs
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls_MarkupCompile.cache
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls_MarkupCompile.lref
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SevenSegmentsStack.baml
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsStack\SixteenSegmentsStack..baml
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.g.resources
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.csproj.CoreCompileInputs.cache
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.dll
+D:\YJuhno\Codepproject_Articles\All_ArticlesGithub\Seven-Segment-and-Sixteen-Segment-Controls-for-WPF\SegmentsApplication\SegmentsControls\obj\Debug\SegmentsControls.pdb

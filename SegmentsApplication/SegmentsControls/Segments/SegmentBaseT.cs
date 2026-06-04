@@ -228,7 +228,7 @@ namespace SegmentsControls
                 {
                     figure.IsSelected =
                         selected.Contains(
-                            figure.SegmentNumber);
+                            figure.Sector);
                 }
             }
             else
@@ -243,7 +243,7 @@ namespace SegmentsControls
             {
                 uint figureMask =
                     Convert.ToUInt32(
-                        figure.SegmentNumber);
+                        figure.Sector);
 
                 figure.IsSelected =
                     (mask & figureMask) != 0;
@@ -842,7 +842,7 @@ namespace SegmentsControls
                 if (brushes != null)
                 {
                     brushes.TryGetValue(
-                        entry.SegmentNumber,
+                        entry.Sector,
                         out customBrush);
                 }
 

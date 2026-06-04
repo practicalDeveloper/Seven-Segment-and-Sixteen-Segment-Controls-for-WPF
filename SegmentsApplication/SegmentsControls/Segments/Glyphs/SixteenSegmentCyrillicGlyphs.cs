@@ -101,7 +101,7 @@ namespace SegmentsControls
                     SixteenSegmentsFlags.RightVertBottom |
                     SixteenSegmentsFlags.RightTopDiagonal |
                     SixteenSegmentsFlags.LeftBottomDiagonal |
-                    SixteenSegmentsFlags.TopVertical,
+                    SixteenSegmentsFlags.LeftHorizTop,
 
                 ['К'] =
                     SixteenSegmentsFlags.LeftVertTop |

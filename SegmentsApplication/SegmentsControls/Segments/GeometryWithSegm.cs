@@ -14,17 +14,17 @@ namespace SegmentsControls
     {
         public PathGeometry Geometry { get; set; }
 
-        public TSegment SegmentNumber { get; set; }
+        public TSegment Sector { get; set; }
 
         public bool IsSelected { get; set; }
 
         public GeometryWithSegm(
             PathGeometry geometry,
-            TSegment segment,
+            TSegment sector,
             bool isSelected = false)
         {
             Geometry = geometry;
-            SegmentNumber = segment;
+            Sector = sector;
             IsSelected = isSelected;
         }
     }
