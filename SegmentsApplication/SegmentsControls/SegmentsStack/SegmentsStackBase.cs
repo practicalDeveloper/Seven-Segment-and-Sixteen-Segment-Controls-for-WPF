@@ -53,7 +53,6 @@ namespace SegmentsControls
         {
             char[] charArray = null;
             int dotCount = 0;
-            int colonCount = 0;
             int charCount = 0;
 
             if (Value != null)
@@ -62,8 +61,6 @@ namespace SegmentsControls
                 charArray =  Value.ToCharArray();
                 // the dots count
                 dotCount = charArray.Where(c => c == '.').Count();
-                // the colons count
-                colonCount = charArray.Where(c => c == ':').Count();
                 // the chars count without dots and colons
                 charCount = charArray.Count() - dotCount;
             }
@@ -73,24 +70,10 @@ namespace SegmentsControls
 
                 for (int i = 0; i < ElementsCount; i++)
                 {
-                    // sets properties for the each seven segment item
-                    var item = new CharItem();
-                    item.ShowDot = ShowDot;
-                    item.ShowColon = ShowColon;
-                    item.FillBrush = FillBrush;
-                    item.SelectedFillBrush = SelectedFillBrush;
-                    item.PenColor = PenColor;
-                    item.SelectedPenColor = SelectedPenColor;
-                    item.PenThickness = PenThickness;
-                    item.GapWidth = GapWidth;
-                    item.RoundedCorners = RoundedCorners;
-                    item.TiltAngle = TiltAngle;
-                    item.VertSegDivider = VertSegDivider;
-                    item.HorizSegDivider = HorizSegDivider;
+                // sets properties for the each seven segment item
+                valueChars.Add(CreateCharItem());
 
-                    valueChars.Add(item);
-
-                    if (i >= ElementsCount - charCount)
+                if (i >= ElementsCount - charCount)
                 {
                     if (index <= charArray.Count() - 1)
                         {
@@ -143,6 +126,26 @@ namespace SegmentsControls
 
             }
             return valueChars;
+        }
+
+
+        private CharItem CreateCharItem()
+        {
+            return new CharItem
+            {
+                ShowDot = ShowDot,
+                ShowColon = ShowColon,
+                FillBrush = FillBrush,
+                SelectedFillBrush = SelectedFillBrush,
+                PenColor = PenColor,
+                SelectedPenColor = SelectedPenColor,
+                PenThickness = PenThickness,
+                GapWidth = GapWidth,
+                RoundedCorners = RoundedCorners,
+                TiltAngle = TiltAngle,
+                VertSegDivider = VertSegDivider,
+                HorizSegDivider = HorizSegDivider
+            };
         }
 
     }

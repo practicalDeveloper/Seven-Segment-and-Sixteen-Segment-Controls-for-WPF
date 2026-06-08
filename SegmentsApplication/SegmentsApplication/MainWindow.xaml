@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:SegmentsControls="clr-namespace:SegmentsControls;assembly=SegmentsControls" 
     x:Class="SegmentsApplication.MainWindow"
-        Title="MainWindow" Height="734.041" Width="924.672" >
+        Title="MainWindow" Height="734.041" Width="950.672" >
 
     <StackPanel Orientation="Vertical" >
         <!--Buttons-->
@@ -85,7 +85,7 @@
                 RoundedCorners="True"
                 SelectedFillBrush="Blue"
                 ShowDot="True"
-                ElementsCount="5" Value="{Binding SixteenSegmentStackValue}" Width="723">
+                ElementsCount="8" Value="{Binding SixteenSegmentStackValue}" Width="930">
 
             </SegmentsControls:SixteenSegmentsStack>
         </StackPanel>
@@ -96,8 +96,8 @@
             RoundedCorners="True"
             ShowDot="True"
                 SelectedFillBrush="Blue"
-            ElementsCount="5" Value="{Binding SixteenSegmentStackValue2}" 
-                Height="150"  Width="723">
+            ElementsCount="8" Value="{Binding SixteenSegmentStackValue2}" 
+                Height="150"  Width="930">
             </SegmentsControls:SixteenSegmentsStack>
 
         </StackPanel>

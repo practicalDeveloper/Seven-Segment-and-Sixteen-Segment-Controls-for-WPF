@@ -72,6 +72,9 @@ namespace SegmentsControls
                 [','] =
                  SixteenSegmentsFlags.BottomVertical,
 
+                ['\''] =
+                 SixteenSegmentsFlags.LeftBottomDiagonal,
+
                 ['/'] =
                  SixteenSegmentsFlags.RightTopDiagonal |
                  SixteenSegmentsFlags.LeftBottomDiagonal,

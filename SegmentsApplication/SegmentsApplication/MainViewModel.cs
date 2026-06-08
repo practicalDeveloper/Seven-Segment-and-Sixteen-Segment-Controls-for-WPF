@@ -209,14 +209,14 @@ namespace SegmentsApplication
 
         private void ChangeSixteenStackValue()
         {
-            SixteenSegmentStackValue = "hello";
-            SixteenSegmentStackValue2 = "world.";
+            SixteenSegmentStackValue = "segments";
+            SixteenSegmentStackValue2 = "display.";
         }
 
         private void SixteenStackCyrillicValue()
         {
-            SixteenSegmentStackValue = "новый";
-            SixteenSegmentStackValue2 = "день.";
+            SixteenSegmentStackValue = "сегменты";
+            SixteenSegmentStackValue2 = "дисплей.";
         }
 
         private void Clear()
